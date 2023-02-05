@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+
+h4 {
+    font-weight: 500;
+    margin: 5px;
+}
+
+.profession {
+    color: #F7F6FB;
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h1.name {
+    margin-bottom: 5px;
+}
+
+h5.profession {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+body {
+    background-color: #CFBDFA;
+    margin-top: 25px;
+}
+
+h3 {
+    color: #8B1E3F;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+h5 {
+    color: #8B1E3F;
+    font-size: 18px;
+}
+
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "leftbar rightbar";
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.profilepic {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 30px auto 0 auto;
+    display: block
+}
+
+.leftbar {
+    grid-area: leftbar;
+    background-color: #B4A0E5;
+    color: #F7F6FB;
+}
+
+.rightbar {
+    grid-area: rightbar;
+    background-color: #F7F6FB;
+    color: #000;
+    padding: 70px;
+}
+
+.navigation {
+    margin-bottom: 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #F7F6FB;
+}
+
+.navigation h2 {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.title {
+    padding-left: 30px;
+}
+
+.navigation h2:hover {
+    color: #8B1E3F;
+    background-color: #F7F6FB;
+}
+
+.contact {
+    margin-top: 50px;
+}
+
+.contact p {
+    margin: 10px 10px 10px 0;
+}
+
+.active {
+    color: #8B1E3F;
+    background-color: #F7F6FB;
+}
+
+.job {
+    display: grid;
+    grid-template-areas: "jobimg jobright";
+    grid-template-columns: min-content auto;
+    grid-gap: 15px;
+
+}
+
+.job h5 {
+    margin-top: 0;
+}
+
+.jobright {
+    grid-area: jobright;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.jobright p {
+    margin: 0;
+
+}
+
+.jobright h5 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.jobimg {
+    grid-area: jobimg;
+    max-width: 100px;
+}
+
+.school {
+    display: grid;
+    grid-template-areas: "schoolimg schoolright";
+    grid-template-columns: min-content auto;
+    grid-gap: 15px;
+
+}
+
+.schoolright {
+    grid-area: schoolright;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.schoolright p {
+    margin: 0;
+
+}
+
+.schoolright h5 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.schoolimg {
+    grid-area: schoolimg;
+    max-width: 100px;
+}
+
+.schools {
+    display: grid;
+    grid-gap: 20px;
+}
