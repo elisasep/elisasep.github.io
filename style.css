@@ -103,13 +103,14 @@ h5 {
     padding-left: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-right: 30px;
     margin: 0;
     font-size: 24px;
     -webkit-transition: all 200ms ease-in-out;
--moz-transition: all 200ms ease-in-out;
--ms-transition: all 200ms ease-in-out;
--o-transition: all 200ms ease-in-out;
-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .title {
@@ -258,7 +259,7 @@ transition: all 200ms ease-in-out;
 }
 
 .message {
-   
+
     width: 100%;
     height: 140px;
     resize: none;
@@ -289,9 +290,94 @@ transition: all 200ms ease-in-out;
 
 }
 
+.progressbar {
+    width: 100%;
+    max-width: 150px;
+    height: 30px;
+    background-color: #efefef;
+    border: 1px solid #8776b5;
+    
+
+}
+
+.inner {
+    height: 30px;
+    background-color: #CFBDFA;
+}
+
+.skills {
+    display: grid;
+    grid-template-areas: "skillsleft skillsright";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.skillsleft {
+    grid-area: skillsleft;
+}
+
+.skillsright {
+    grid-area: skillsright;
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+
+}
+
+.skilltext {
+    display: flex;
+    align-items: center;
+}
+
+.topbar {
+    display: none;
+    color: #F7F6FB;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: #CFBDFA;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+
+}
+
+.closebtn {
+    display: none;
+}
+
+#menu:checked~.topbar .closebtn {
+    display: block;
+}
+
+#menu:checked~.topbar .openbtn {
+    display: none;
+}
+
+#menu:checked~.navigation {
+    display: block;
+}
+
+#menu:checked~.fade {
+    display: block;
+}
+
+.topbar h2 {
+    margin: 0;
+    padding: 10px;
+}
 
 @media screen and (max-width: 500px) {
 
+    .skills {
+        grid-template-areas: "skillsleft" "skillsright";
+        grid-template-columns: none;
+    }
 
     .school {
         grid-template-areas: "schoolimg" "schoolright";
@@ -322,53 +408,17 @@ transition: all 200ms ease-in-out;
         justify-self: center;
     }
 
+
+}
+
+
+@media screen and (max-width: 768px) {
+    
     .title {
         padding: 0;
         text-align: center;
     }
-}
 
-.topbar {
-    display: none;
-    color: #F7F6FB;
-    text-align: center;
-    width: 100%;
-    height: 50px;
-    background-color: #CFBDFA;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    z-index: 3;
-
-
-}
-
-.closebtn {
-    display: none;
-}
-
-#menu:checked ~ .topbar .closebtn {
-    display: block;
-}
-
-#menu:checked ~ .topbar .openbtn {
-    display: none;
-}
-
-#menu:checked ~ .navigation {
-    display: block;
-}
-
-#menu:checked ~ .fade {
-    display: block;
-}
-
-.topbar h2 {
-    margin: 0;
-    padding: 10px;
-}
-
-@media screen and (max-width: 768px) {
     .wrapper {
         grid-template-areas: "leftbar" "rightbar";
         grid-template-columns: none;
@@ -380,31 +430,32 @@ transition: all 200ms ease-in-out;
 
     .navigation {
         display: none;
-        position: fixed; 
+        position: fixed;
         top: 50px;
         left: 0;
         width: 100%;
         text-align: center;
         background-color: #CFBDFA;
- }
+    }
 
- .navigation h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0;
- }
+    .navigation h2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0;
+    }
 
     body {
-margin-top: 40px;
-margin-left: 0;
-margin-right: 0;
-margin-bottom: 0;
+        margin-top: 40px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
 
     }
 
     .box {
         max-width: 100%;
-      
+
     }
 
 }
+
