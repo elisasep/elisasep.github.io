@@ -353,9 +353,24 @@ h5 {
     display: none;
 }
 
-#menu:checked~.topbar .closebtn {
+.openbtn {
     display: block;
 }
+
+
+.navbutton {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 24px;
+    padding: 10px 0px 10px 0px;
+}
+
+
+#menu:checked~.topbar .closebtn {
+    display: block;
+}   
 
 #menu:checked~.topbar .openbtn {
     display: none;
