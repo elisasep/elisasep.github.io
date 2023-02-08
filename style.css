@@ -71,6 +71,7 @@ h5 {
 
 .profilepic {
     max-width: 200px;
+    width: 100%;
     border-radius: 50%;
     margin: 30px auto 0 auto;
     display: block
